@@ -5,8 +5,9 @@ import { router } from "./routes/books.js";
 import mongoose from "mongoose";
 dotenv.config();
 
-app.use("/books", router);
-app.use(express.json()); //midleware to access the req body
+app.use(express.json());
+app.use("/", router);
+//midleware to access the req body
 
 //conct to the db
 if (process.env.MONGO_URI) {
