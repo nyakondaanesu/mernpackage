@@ -1,12 +1,15 @@
 import express from "express";
 const app = express(); //creating express app
 import dotenv from "dotenv";
-import { router } from "./routes/books.js";
+import { router } from "./routes/route.js";
 import mongoose from "mongoose";
+import cors from "cors";
+
 dotenv.config();
 
 app.use(express.json());
-app.use("/", router);
+app.use(cors());
+app.use("/api", router);
 //midleware to access the req body
 
 //conct to the db
@@ -17,7 +20,9 @@ if (process.env.MONGO_URI) {
       console.log("connected to db");
     })
     .catch((err) => {
-      console.log(err);
+      console.log(
+        `couldn't connect to db make sure you create a mongodb atlas account`
+      );
     });
 }
 
