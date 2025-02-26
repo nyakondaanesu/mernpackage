@@ -1,0 +1,30 @@
+{
+  "name": "mern-template-heroui",
+  "version": "1.0.1",
+  "description": "a mern template with heroui",
+  "keywords": [
+    "mern",
+    "heroui",
+    "mongoose",
+    "express",
+    "react",
+    "node",
+    "javascript",
+    "boilerplate"
+  ],
+  "homepage": "https://github.com/nyakondaanesu/mernpackage#readme",
+  "bugs": {
+    "url": "https://github.com/nyakondaanesu/mernpackage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyakondaanesu/mernpackage.git"
+  },
+  "license": "MIT",
+  "author": "anesunyakonda",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
