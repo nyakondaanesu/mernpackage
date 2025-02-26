@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Vite + HeroUI",
+  name: "mern.js",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -21,10 +21,10 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/frontio-ai/heroui",
-    twitter: "https://twitter.com/hero_ui",
+    github: "https://github.com/nyakondaanesu",
+    twitter: "https://x.com/anesuznyakonda",
     docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
+    discord: "https://instagram/anesunyakonda",
     sponsor: "https://patreon.com/jrgarciadev",
   },
 };

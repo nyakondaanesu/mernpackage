@@ -1,12 +1,7 @@
-import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
-import { button as buttonStyles } from "@heroui/theme";
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import FetchedData from "@/components/fetchedData";
 
 export default function IndexPage() {
   return (
@@ -27,6 +22,9 @@ export default function IndexPage() {
             2. Modify your api routes in{" "}
             <Code color="primary">backend/routes</Code>
           </span>
+        </div>
+        <div className="mt-10">
+          <FetchedData />
         </div>
       </section>
     </DefaultLayout>
